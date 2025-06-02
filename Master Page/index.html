@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuktesh Enterprises Cement Brick Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="video-container">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="Video/background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <header class="header">
+    <nav class="nav-container">
+      <div class="brand-logo">
+        <a href="index.html">
+          <img src="Images/Logo.png" alt="Yuktesh Enterprises Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <div class="menu-toggle" aria-label="Toggle menu">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+      </div>
+
+      <ul class="navigation" id="mobileMenu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="nav-link">Products</a></li>
+        <li><a href="#" class="nav-link">Manufacturing Process</a></li>
+        <li><a href="#" class="nav-link">Order Management</a></li>
+        <li><a href="#" class="nav-link">Our Team</a></li>
+        <li><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="content-wrapper">
+      <h1 class="main-title">Yuktesh Enterprises</h1>
+      <p class="subtitle">Building with Trust, Delivering with Quality.</p>
+      <a href="#products" class="hero-button">View Products</a>
+    </div>
+  </main>
+
+  <section class="company-intro">
+    <div class="intro-content">
+      <h2>About Yuktesh Enterprises</h2>
+      <p>
+        With decades of legacy, our cement solutions are trusted by builders across the nation for strength, quality, and durability.
+      </p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </section>
+
+  <section class="product-snapshot" id="products">
+    <div class="products-header">
+      <h2>Our Featured Products</h2>
+    </div>
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="Images/brick1.jpeg" alt="Premium Cement Brick" />
+        <p>Premium Cement Brick</p>
+      </div>
+      <div class="product-item">
+        <img src="Images/brick2.webp" alt="High-Density Block" />
+        <p>High-Density Block</p>
+      </div>
+      <div class="product-item">
+        <img src="Images/brick3.avif" alt="Eco-Friendly Brick" />
+        <p>Eco-Friendly Brick</p>
+      </div>
+    </div>
+    <a href="#" class="see-more">See More</a>
+  </section>
+
+  <section class="order-management">
+    <div class="order-wrapper">
+      <h2>Place Your Order</h2>
+      <p class="order-instructions">Call us directly at <strong>+1-234-567-8901</strong> or fill out the form below:</p>
+      <form class="order-form" id="orderForm">
+        <input type="text" id="fullName" placeholder="Full Name" required pattern="[A-Za-z ]+" title="Please enter only letters" />
+        <div class="error-message" id="nameError">Please enter your full name (letters only)</div>
+        
+        <input type="tel" id="mobile" placeholder="Mobile Number" required />
+        <div class="error-message" id="mobileError">Please enter a valid mobile number</div>
+        
+        <select id="product" required>
+          <option value="">Select Product</option>
+          <option value="brick1">Premium Cement Brick</option>
+          <option value="brick2">High-Density Block</option>
+          <option value="brick3">Eco-Friendly Brick</option>
+        </select>
+        <div class="error-message" id="productError">Please select a product</div>
+        
+        <input type="number" id="quantity" placeholder="Quantity (in units)" min="1" required />
+        <div class="error-message" id="quantityError">Please enter a valid quantity</div>
+        
+        <textarea id="notes" placeholder="Additional Notes (Optional)"></textarea>
+        
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>YUKTESH ENTERPRISES</h3>
+        <p>Dwaraka Mindspace, Plot No.28,<br>
+        Survey No. 8 & 9, Gafoornagar,<br>
+        Hitech City, Near Westin Hotel,<br>
+        Hyderabad, Telangana - 500081.</p>
+        <p><strong>Phone:</strong> +91 9985752406</p>
+        <p><strong>Email:</strong> contactus@yuktesh.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Manufacturing Process</a></li>
+          <li><a href="#">Order Management</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

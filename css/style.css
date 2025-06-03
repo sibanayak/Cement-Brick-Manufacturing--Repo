@@ -373,6 +373,68 @@ body {
   background-color: #0056b3;
 }
 
+     .faq-section {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .faq-description {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .faq-question {
+      padding: 15px 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: '−';
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 20px;
+      background-color: #f1f1f1;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 15px 20px;
+      max-height: 300px;
+    }
+
 .custom-footer {
   background-color: #1f1f25;
   color: #ddd;
@@ -486,6 +548,9 @@ body {
   .logo-img {
     height: 60px;
   }
+  .faq-title { 
+    font-size: 1.8rem; 
+  }
 }
 
 @media (max-width: 768px) {
@@ -511,6 +576,9 @@ body {
   .product-snapshot,
   .order-management {
     padding: 2rem 1rem;
+  }
+  .faq-title { 
+    font-size: 1.5rem; 
   }
   
   .custom-footer {
@@ -658,7 +726,19 @@ body {
     font-size: 0.9rem;
   }
 }
+    @media (max-width: 425px) {
+      .faq-title { font-size: 1.3rem; }
+    }
 
+    @media (max-width: 375px) {
+      .faq-title { font-size: 1.2rem; }
+    }
+
+    @media (max-width: 320px) {
+      .faq-title { font-size: 1.1rem; }
+      .faq-question { font-size: 0.95rem; }
+    }
+    
 @keyframes fadeInUp {
   from {
     opacity: 0;

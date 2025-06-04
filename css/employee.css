@@ -146,20 +146,25 @@ body {
 }
 
 .page-header h2 {
-    font-size: 2.5rem;
-    color: #2d3748;
-    margin-bottom: 15px;
-    font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #000;
 }
 
 .page-header p {
-    color: #718096;
-    font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1); 
 }
 
 .search-container {
     max-width: 600px;
-    margin: 0 auto 60px;
+    margin: 0 auto 50px;
     position: relative;
     background: white;
     border-radius: 60px;

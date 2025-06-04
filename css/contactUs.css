@@ -224,7 +224,7 @@ button:hover {
 
 .info {
   margin-top: 20px;
-  color: white;
+  color: black;
   font-size: 25px;
 }
 
@@ -241,7 +241,7 @@ button:hover {
 .social-icons a {
   margin: 0 10px;
   font-size: 30px;
-  color: #888;
+  color: black;
   transition: all 0.3s;
 }
 

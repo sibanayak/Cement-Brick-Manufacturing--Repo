@@ -123,14 +123,12 @@ body {
 }
 .container {
   max-width: 700px;
-  /* background-color: black; */
   margin: 120px auto 50px;
   padding: 20px;
   text-align: center;
 }
 .contact-box {
   background: rgba(255, 255, 255, 0.9);
-  /* backdrop-filter: blur(10px); */
   border-radius: 16px;
   padding: 40px 30px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -165,9 +163,8 @@ textarea {
   border: 1px solid#ccc;
   border-radius: 8px;
   background-color: white;
-  /* outline: none; */
-  /* transition: all 0.3 s; */
 }
+
 input:focus,
 textarea:focus {
   border-color: #4facfe;
@@ -182,7 +179,6 @@ label {
   padding: 0 5px;
   color: #888;
   font-size: 14px;
-  /* transition: all 0.2s ease; */
   pointer-events: none;
 }
 input:focus + label,
@@ -221,7 +217,7 @@ button:hover {
   font-size: 15px;
 }
 
-.info .mail{
+.info .mail {
   margin-bottom: 5px;
 }
 .info i {

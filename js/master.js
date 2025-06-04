@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menu = document.getElementById("mobileMenu");
   const toggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelectorAll(".nav-link");
+  const faqItems = document.querySelectorAll('.faq-item');
 
   toggle.addEventListener("click", () => {
     menu.classList.toggle("active");
@@ -19,14 +20,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
-  const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-      item.querySelector('.faq-question').addEventListener('click', () => {
-        item.classList.toggle('active');
-      });
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+
+  question.addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
+
+    faqItems.forEach(i => {
+      const ans = i.querySelector('.faq-answer');
+      ans.style.maxHeight = null;
+      ans.style.paddingTop = '0px';
+      ans.style.paddingBottom = '0px';
+      i.classList.remove('active');
     });
 
-  const orderForm = document.getElementById('orderForm');
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      answer.style.paddingTop = '15px';
+      answer.style.paddingBottom = '15px';
+    }
+  });
+});
+
+
+
+const orderForm = document.getElementById('orderForm');
   const fullName = document.getElementById('fullName');
   const mobile = document.getElementById('mobile');
   const product = document.getElementById('product');

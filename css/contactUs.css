@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Arial", sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .video-container {
   position: fixed;
   top: 0;
@@ -121,18 +123,21 @@ body {
   transition: 0.3s;
   border-radius: 2px;
 }
+
 .container {
   max-width: 700px;
   margin: 120px auto 50px;
   padding: 20px;
   text-align: center;
 }
+
 .contact-box {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 16px;
   padding: 40px 30px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
+
 .contact-box h1 {
   font-size: 28px;
   margin-bottom: 10px;
@@ -142,19 +147,23 @@ body {
   color: #555;
   margin-bottom: 30px;
 }
+
 form {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
 .form-row {
   display: flex;
   gap: 50px;
 }
+
 .form-group {
   flex: 1;
   position: relative;
 }
+
 input,
 textarea {
   width: 100%;
@@ -170,6 +179,7 @@ textarea:focus {
   border-color: #4facfe;
   box-shadow: 0 0 5px rgpa(79, 172, 254, 0.4);
 }
+
 label {
   position: absolute;
   left: 12px;
@@ -182,10 +192,11 @@ label {
   pointer-events: none;
   transition: all 0.3s ease;
 }
-input:focus + label,
-input:not(:placeholder-shown) + label,
-textarea:focus + label,
-textarea:not(:placeholder-shown) + label {
+
+input:focus+label,
+input:not(:placeholder-shown)+label,
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
   top: -12px;
   left: 0px;
   font-size: 14px;
@@ -222,9 +233,11 @@ button:hover {
 .info .mail {
   margin-bottom: 5px;
 }
+
 .info i {
   margin-right: 8px;
 }
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -394,6 +407,7 @@ button:hover {
     flex-direction: column;
   }
 }
+
 @media (max-width: 900px) {
   .menu-toggle {
     display: flex;

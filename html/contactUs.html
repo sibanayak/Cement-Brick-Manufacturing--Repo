@@ -1,133 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/contactUs.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/contactUs.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/contactUs.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <div class="video-container">
-      <video class="bg-video" autoplay muted loop playsinline>
-        <source src="../assets/background.mp4" type="video/mp4" />
-      </video>
-      <div class="video-overlay"></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/contactUs.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
 
-    <header class="header">
-      <nav class="nav-container">
-        <div class="brand-logo">
-          <a href="index.html">
-            <img
-              src="../assets/Logo.png"
-              alt="Yuktesh Enterprises Logo"
-              class="logo-img"
-            />
-          </a>
+<body>
+  <div class="video-container">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="../assets/background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <header class="header">
+    <nav class="nav-container">
+      <div class="brand-logo">
+        <a href="index.html">
+          <img src="../assets/Logo.png" alt="Yuktesh Enterprises Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <div class="menu-toggle" aria-label="Toggle menu">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+      </div>
+
+      <ul class="navigation" id="mobileMenu">
+        <li><a href="master.html" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="nav-link">Products</a></li>
+        <li><a href="#" class="nav-link">Manufacturing Process</a></li>
+        <li><a href="#" class="nav-link">Order Management</a></li>
+        <li><a href="./employee.html" class="nav-link">Our Team</a></li>
+        <li><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="contact-box">
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you. Send us a message and we'll respond as
+        soon as possible.
+      </p>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="firstName" placeholder="" required />
+            <label>First Name</label>
+            <span class="error" id="firstNameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="lastName" placeholder="" required />
+            <label>Last Name</label>
+            <span class="error" id="lastNameError"></span>
+          </div>
         </div>
-
-        <div class="menu-toggle" aria-label="Toggle menu">
-          <div class="menu-bar"></div>
-          <div class="menu-bar"></div>
-          <div class="menu-bar"></div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="email" id="mail" placeholder="" required />
+            <label>Email</label>
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="phone" placeholder="" required />
+            <label>Phone Number</label>
+            <span class="error" id="phoneError"></span>
+          </div>
         </div>
-
-        <ul class="navigation" id="mobileMenu">
-          <li><a href="master.html" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About Us</a></li>
-          <li><a href="#" class="nav-link">Products</a></li>
-          <li><a href="#" class="nav-link">Manufacturing Process</a></li>
-          <li><a href="#" class="nav-link">Order Management</a></li>
-          <li><a href="./employee.html" class="nav-link">Our Team</a></li>
-          <li><a href="#" class="nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="contact-box">
-        <h1>Contact Us</h1>
-        <p>
-          We'd love to hear from you. Send us a message and we'll respond as
-          soon as possible.
+        <div class="form-group full">
+          <textarea required rows="4" id="message" placeholder=""></textarea>
+          <label>What do you have in mind?</label>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="info">
+        <p class="mail">
+          <i class="fas fa-envelope"></i> info@yukteshenterprises.com
         </p>
-        <form id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <input type="text" id="firstName" placeholder="" required />
-              <label>First Name</label>
-              <span class="error" id="firstNameError"></span>
-            </div>
-            <div class="form-group">
-              <input type="text" id="lastName" placeholder="" required />
-              <label>Last Name</label>
-              <span class="error" id="lastNameError"></span>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <input type="email" id="mail" placeholder="" required />
-              <label>Email</label>
-              <span class="error" id="emailError"></span>
-            </div>
-            <div class="form-group">
-              <input type="text" id="phone" placeholder="" required />
-              <label>Phone Number</label>
-              <span class="error" id="phoneError"></span>
-            </div>
-          </div>
-          <div class="form-group full">
-            <textarea required rows="4" id="message" placeholder=""></textarea>
-            <label>What do you have in mind?</label>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-        <div class="info">
-          <p class="mail">
-            <i class="fas fa-envelope"></i> info@yukteshenterprises.com
-          </p>
-          <p><i class="fas fa-phone"></i> +91 22 1234 5678</p>
-        </div>
+        <p><i class="fas fa-phone"></i> +91 22 1234 5678</p>
+      </div>
 
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-google"></i></a>
-        </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="../html/master.html">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Products</a></li>
-              <li><a href="#portfolio">Manufacturing Process</a></li>
-              <li><a href="#blog">Order Management</a></li>
-              <li><a href="../html/employee.html">Our Team</a></li>
-              <li><a href="../html/contactUs.html">Contact Us</a></li>
-            </ul>
-          </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../html/master.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Products</a></li>
+            <li><a href="#portfolio">Manufacturing Process</a></li>
+            <li><a href="#blog">Order Management</a></li>
+            <li><a href="../html/employee.html">Our Team</a></li>
+            <li><a href="../html/contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
 
-          <!-- <div class="footer-section">
+        <!-- <div class="footer-section">
             <h3>Services</h3>
             <ul>
               <li><a href="#web-design">Web Design</a></li>
@@ -139,40 +130,41 @@
             </ul>
           </div> -->
 
-          <div class="footer-section">
-            <h3>Connect With Us</h3>
-            <p>
-              Join our community and stay updated with the latest trends and
-              innovations.
-            </p>
-            <div class="social-icons">
-              <a href="#" class="social-icon facebook">f</a>
-              <a href="#" class="social-icon twitter">X</a>
-              <a href="#" class="social-icon instagram">i</a>
-              <a href="#" class="social-icon linkedin">ln</a>
-              <a href="#" class="social-icon youtube">Y</a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h3>Contact Info</h3>
-            <p>123 Business Avenue, Mumbai</p>
-            <p>Maharashtra, India 400001</p>
-            <p>Phone: +91 22 1234 5678</p>
-            <p>Email: info@yukteshenterprises.com</p>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <p>
+            Join our community and stay updated with the latest trends and
+            innovations.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon facebook">f</a>
+            <a href="#" class="social-icon twitter">X</a>
+            <a href="#" class="social-icon instagram">i</a>
+            <a href="#" class="social-icon linkedin">ln</a>
+            <a href="#" class="social-icon youtube">Y</a>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div class="footer-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#cookies">Cookie Policy</a>
-          </div>
-          <p>&copy; 2023 Yuktesh Enterprises. All rights reserved.</p>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>123 Business Avenue, Mumbai</p>
+          <p>Maharashtra, India 400001</p>
+          <p>Phone: +91 22 1234 5678</p>
+          <p>Email: info@yukteshenterprises.com</p>
         </div>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#cookies">Cookie Policy</a>
+        </div>
+        <p>&copy; 2023 Yuktesh Enterprises. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>

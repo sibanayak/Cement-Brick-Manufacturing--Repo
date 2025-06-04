@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "leadership",
       bio: "Visionary leader with 15+ years of experience in driving business growth and innovation.",
       email: "rajesh@yukteshenterprises.com",
-      phone: "+91 98765 43210"
+      phone: "+91 98765 43210",
     },
     {
       initials: "PS",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "leadership",
       bio: "Technology strategist leading digital transformation initiatives and innovation.",
       email: "priya.sharma@yukteshenterprises.com",
-      phone: "+91 98765 43211"
+      phone: "+91 98765 43211",
     },
     {
       initials: "AK",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "engineering",
       bio: "Experienced engineer specializing in project management and technical solutions.",
       email: "amit.kumar@yukteshenterprises.com",
-      phone: "+91 98765 43212"
+      phone: "+91 98765 43212",
     },
     {
       initials: "SG",
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "sales",
       bio: "Creative marketing professional driving brand awareness and customer engagement.",
       email: "sneha.gupta@yukteshenterprises.com",
-      phone: "+91 98765 43213"
+      phone: "+91 98765 43213",
     },
     {
       initials: "RV",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "operations",
       bio: "Operations expert ensuring smooth workflow and efficient project delivery.",
       email: "ravi.verma@yukteshenterprises.com",
-      phone: "+91 98765 43214"
+      phone: "+91 98765 43214",
     },
     {
       initials: "MP",
@@ -73,22 +73,22 @@ document.addEventListener("DOMContentLoaded", function () {
       department: "hr",
       bio: "HR professional focused on talent acquisition and employee development.",
       email: "meera.patel@yukteshenterprises.com",
-      phone: "+91 98765 43215"
-    }
+      phone: "+91 98765 43215",
+    },
   ];
 
-  const staffGrid = document.getElementById('staffGrid');
-  const searchInput = document.getElementById('searchInput');
-  const filterButtons = document.querySelectorAll('.filter-btn');
+  const staffGrid = document.getElementById("staffGrid");
+  const searchInput = document.getElementById("searchInput");
+  const filterButtons = document.querySelectorAll(".filter-btn");
 
   if (staffGrid && searchInput && filterButtons.length > 0) {
     function renderStaffCards(staffList) {
-      staffGrid.innerHTML = '';
+      staffGrid.innerHTML = "";
       staffList.forEach((staff, index) => {
-        const card = document.createElement('div');
-        card.className = 'staff-card fade-in';
+        const card = document.createElement("div");
+        card.className = "staff-card fade-in";
         card.style.animationDelay = `${index * 0.1}s`;
-        card.setAttribute('data-department', staff.department);
+        card.setAttribute("data-department", staff.department);
 
         card.innerHTML = `
           <div class="staff-photo">${staff.initials}</div>
@@ -107,44 +107,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function formatDepartment(department) {
       const names = {
-        'leadership': 'Leadership',
-        'engineering': 'Engineering',
-        'sales': 'Sales & Marketing',
-        'operations': 'Operations',
-        'hr': 'Human Resources'
+        leadership: "Leadership",
+        engineering: "Engineering",
+        sales: "Sales & Marketing",
+        operations: "Operations",
+        hr: "Human Resources",
       };
       return names[department] || department;
     }
 
     function filterStaffByDepartment(department) {
-      if (department === 'all') return staffData;
-      return staffData.filter(staff => staff.department === department);
+      if (department === "all") return staffData;
+      return staffData.filter((staff) => staff.department === department);
     }
 
     function searchStaff(query) {
-      const activeFilter = document.querySelector('.filter-btn.active')?.dataset.department || 'all';
+      const activeFilter =
+        document.querySelector(".filter-btn.active")?.dataset.department ||
+        "all";
       let filteredStaff = filterStaffByDepartment(activeFilter);
       if (query) {
         const searchTerm = query.toLowerCase();
-        filteredStaff = filteredStaff.filter(staff =>
-          staff.name.toLowerCase().includes(searchTerm) ||
-          staff.position.toLowerCase().includes(searchTerm) ||
-          staff.bio.toLowerCase().includes(searchTerm)
+        filteredStaff = filteredStaff.filter(
+          (staff) =>
+            staff.name.toLowerCase().includes(searchTerm) ||
+            staff.position.toLowerCase().includes(searchTerm) ||
+            staff.bio.toLowerCase().includes(searchTerm)
         );
       }
       return filteredStaff;
     }
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
         const filtered = filterStaffByDepartment(this.dataset.department);
         renderStaffCards(filtered);
       });
     });
 
-    searchInput.addEventListener('input', function () {
+    searchInput.addEventListener("input", function () {
       const query = this.value.trim();
       const results = searchStaff(query);
       renderStaffCards(results);

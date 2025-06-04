@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.remove("active");
       }
     });
-  } // ✅ this closes the if (toggle && menu) block
+  } 
 
-}); // ✅ this closes the DOMContentLoaded event listener
+}); 
 
 
 

@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f8f9fa;
@@ -109,7 +113,8 @@ body {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
-.nav-active{
+
+.nav-link.active {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
@@ -203,6 +208,20 @@ body {
   transform: translateY(-50%);
   color: #667eea;
   font-size: 1.2rem;
+}
+
+.white-overlay-section {
+  background: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  position: relative;
+  left: 0;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 0;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .department-filter {
@@ -306,7 +325,7 @@ body {
 }
 
 .staff-position {
-  color: #667eea;
+  color: #30a49a;
   font-weight: 600;
   margin-bottom: 8px;
   text-transform: uppercase;

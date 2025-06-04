@@ -180,15 +180,17 @@ label {
   color: #888;
   font-size: 14px;
   pointer-events: none;
+  transition: all 0.3s ease;
 }
 input:focus + label,
 input:not(:placeholder-shown) + label,
 textarea:focus + label,
 textarea:not(:placeholder-shown) + label {
-  top: -10px;
-  left: 10px;
-  font-size: 12px;
-  color: #4facfe;
+  top: -12px;
+  left: 0px;
+  font-size: 14px;
+  color: black;
+  background-color: transparent;
 }
 
 .full textarea {

@@ -134,6 +134,7 @@ body {
 .content-section {
   min-height: 100vh;
   padding: 60px 0;
+   background: rgba(255, 255, 255, 0.95);
 }
 
 .container {

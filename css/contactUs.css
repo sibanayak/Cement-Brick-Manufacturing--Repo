@@ -338,13 +338,13 @@ button:hover {
 
 .social-icons {
   display: flex;
-  gap: 1px;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .social-icon {
-  width: 80px;
-  height: 30px;
+  width: 45px;
+  /* height: 30px; */
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   display: flex;

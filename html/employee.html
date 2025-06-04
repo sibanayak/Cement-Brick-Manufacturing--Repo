@@ -1,133 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staff Directory - Yuktesh Enterprises</title>
-    <link rel="stylesheet" href="../css/employee.css">
-</head>
+    <link rel="stylesheet" href="../css/employee.css" />
+  </head>
 
-<body>
+  <body>
     <div class="video-section">
-        <video autoplay muted loop id="bgVideo">
-            <source src="../assets/background.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="bgVideo">
+        <source src="../assets/background.mp4" type="video/mp4" />
+      </video>
 
-        <header class="header">
-            <nav class="nav-container">
-                <div class="brand-logo">
-                    <a href="master.html">
-                        <img src="../assets/Logo.png" alt="Yuktesh Enterprises Logo" class="logo-img" />
-                    </a>
-                </div>
+      <header class="header">
+        <nav class="nav-container">
+          <div class="brand-logo">
+            <a href="master.html">
+              <img
+                src="../assets/Logo.png"
+                alt="Yuktesh Enterprises Logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
 
-                <div class="menu-toggle" aria-label="Toggle menu">
-                    <div class="menu-bar"></div>
-                    <div class="menu-bar"></div>
-                    <div class="menu-bar"></div>
-                </div>
+          <div class="menu-toggle" aria-label="Toggle menu">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+          </div>
 
-                <ul class="navigation" id="mobileMenu">
-                    <li><a href="master.html" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">About Us</a></li>
-                    <li><a href="#" class="nav-link">Products</a></li>
-                    <li><a href="#" class="nav-link">Manufacturing Process</a></li>
-                    <li><a href="#" class="nav-link">Order Management</a></li>
-                    <li><a href="../html/employee.html" class="nav-link">Our Team</a></li>
-                    <li><a href="../contactUs.html" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
+          <ul class="navigation" id="mobileMenu">
+            <li><a href="master.html" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+            <li><a href="#" class="nav-link">Products</a></li>
+            <li><a href="#" class="nav-link">Manufacturing Process</a></li>
+            <li><a href="#" class="nav-link">Order Management</a></li>
+            <li>
+              <a href="../html/employee.html" class="nav-link">Our Team</a>
+            </li>
+            <li><a href="../contactUs.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
     <div class="content-section">
-        <div class="container">
-            <div class="page-header">
-                <h2>Our Team</h2>
-                <p>Meet the talented professionals at Yuktesh Enterprises</p>
-            </div>
-
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search staff members..." id="searchInput">
-                <span class="search-icon">🔍</span>
-            </div>
-
-            <div class="department-filter">
-                <button class="filter-btn active" data-department="all">All Departments</button>
-                <button class="filter-btn" data-department="leadership">Leadership</button>
-                <button class="filter-btn" data-department="engineering">Engineering</button>
-                <button class="filter-btn" data-department="sales">Sales & Marketing</button>
-                <button class="filter-btn" data-department="operations">Operations</button>
-                <button class="filter-btn" data-department="hr">Human Resources</button>
-            </div>
-
-            <div class="staff-grid" id="staffGrid">
-            </div>
+      <div class="container">
+        <div class="page-header">
+          <h2>Our Team</h2>
+          <p>Meet the talented professionals at Yuktesh Enterprises</p>
         </div>
+
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search staff members..."
+            id="searchInput"
+          />
+          <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="department-filter">
+          <button class="filter-btn active" data-department="all">
+            All Departments
+          </button>
+          <button class="filter-btn" data-department="leadership">
+            Leadership
+          </button>
+          <button class="filter-btn" data-department="engineering">
+            Engineering
+          </button>
+          <button class="filter-btn" data-department="sales">
+            Sales & Marketing
+          </button>
+          <button class="filter-btn" data-department="operations">
+            Operations
+          </button>
+          <button class="filter-btn" data-department="hr">
+            Human Resources
+          </button>
+        </div>
+
+        <div class="staff-grid" id="staffGrid"></div>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="master.html">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Products</a></li>
-                        <li><a href="#portfolio">Manufacturing Process</a></li>
-                        <li><a href="#blog">Order Management</a></li>
-                        <li><a href="../html/employee.html">Our Team</a></li>
-                        <li><a href="../html/contactUs.html">Contact Us</a></li>
-                    </ul>
-                </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="master.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Products</a></li>
+              <li><a href="#portfolio">Manufacturing Process</a></li>
+              <li><a href="#blog">Order Management</a></li>
+              <li><a href="../html/employee.html">Our Team</a></li>
+              <li><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#web-design">Web Design</a></li>
-                        <li><a href="#development">Development</a></li>
-                        <li><a href="#seo">SEO Optimization</a></li>
-                        <li><a href="#marketing">Digital Marketing</a></li>
-                        <li><a href="#consulting">Consulting</a></li>
-                        <li><a href="#support">24/7 Support</a></li>
-                    </ul>
-                </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#web-design">Web Design</a></li>
+              <li><a href="#development">Development</a></li>
+              <li><a href="#seo">SEO Optimization</a></li>
+              <li><a href="#marketing">Digital Marketing</a></li>
+              <li><a href="#consulting">Consulting</a></li>
+              <li><a href="#support">24/7 Support</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <p>Join our community and stay updated with the latest trends and innovations.</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon facebook">f</a>
-                        <a href="#" class="social-icon twitter">X</a>
-                        <a href="#" class="social-icon instagram">i</a>
-                        <a href="#" class="social-icon linkedin">ln</a>
-                        <a href="#" class="social-icon youtube">Y</a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>123 Business Avenue, Mumbai</p>
-                    <p>Maharashtra, India 400001</p>
-                    <p>Phone: +91 22 1234 5678</p>
-                    <p>Email: info@yukteshenterprises.com</p>
-                </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <p>
+              Join our community and stay updated with the latest trends and
+              innovations.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook">f</a>
+              <a href="#" class="social-icon twitter">X</a>
+              <a href="#" class="social-icon instagram">i</a>
+              <a href="#" class="social-icon linkedin">ln</a>
+              <a href="#" class="social-icon youtube">Y</a>
             </div>
+          </div>
 
-            <div class="footer-bottom">
-                <div class="footer-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
-                    <a href="#cookies">Cookie Policy</a>
-                </div>
-                <p>&copy; 2023 Yuktesh Enterprises. All rights reserved.</p>
-            </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>123 Business Avenue, Mumbai</p>
+            <p>Maharashtra, India 400001</p>
+            <p>Phone: +91 22 1234 5678</p>
+            <p>Email: info@yukteshenterprises.com</p>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#cookies">Cookie Policy</a>
+          </div>
+          <p>&copy; 2023 Yuktesh Enterprises. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="../js/employee.js"></script>
-</body>
-
+  </body>
 </html>

@@ -245,7 +245,7 @@ body {
 .filter-btn.active {
   background: #30a49a;
   color: white;
-  border-color: #667eea;
+  border-color: #30a49a;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
@@ -265,7 +265,7 @@ body {
   border-radius: 20px;
   padding: 35px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 35px rgba(0.3, 0.5, 0.5, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease;
   position: relative;
@@ -279,7 +279,7 @@ body {
   left: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #30a49a, #068379);
   transition: left 0.4s ease;
 }
 

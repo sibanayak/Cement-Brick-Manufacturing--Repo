@@ -27,20 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
     question.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
 
+      // Collapse all open items
       faqItems.forEach((otherItem) => {
         if (otherItem !== item) {
           otherItem.classList.remove("active");
-          const otherAnswer = otherItem.querySelector(".faq-answer");
-          otherAnswer.style.maxHeight = "0px";
+          otherItem.querySelector(".faq-answer").style.maxHeight = "0px";
         }
       });
 
-      if (!isActive) {
-        item.classList.add("active");
-        answer.style.maxHeight = answer.scrollHeight + 40 + "px";
-      } else {
+      // Toggle the current item
+      if (isActive) {
         item.classList.remove("active");
         answer.style.maxHeight = "0px";
+      } else {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
       }
     });
   });

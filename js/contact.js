@@ -114,7 +114,7 @@ function validateEmail() {
 // for phone
 function validatePhone() {
     const phoneValue = phone.value.trim();
-    // const phoneDigitsOnly = phoneValue.replace(/\D/g, ""); // removes non-digits
+    const phoneDigitsOnly = phoneValue.replace(/\D/g, ""); // removes non-digits
 
     const phoneRegex = /^[0-9\s\-()+]+$/; // accepts digits, spaces, dashes, parens
 
@@ -173,7 +173,7 @@ form.addEventListener("submit", function(e) {
     const isValidPhone=validatePhone();
 
     if(isFirstNameValid &&  isLastNameValid && isValidEmail && isValidPhone){
-        alert("thanks");
+        alert("your details submitted successfully ");
         form.reset();
     }
 });

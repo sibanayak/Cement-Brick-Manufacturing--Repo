@@ -186,17 +186,21 @@ label {
   top: 50%;
   transform: translateY(-50%);
   background-color: #fff;
-  padding: 0 5px;
+  padding-left: 80px;
+  padding-bottom: 5px;
   color: #888;
   font-size: 14px;
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
-input:focus+label,
-input:not(:placeholder-shown)+label,
-textarea:focus+label,
-textarea:not(:placeholder-shown)+label {
+.message-box {
+  padding-left: 180px;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
   top: -12px;
   left: 0px;
   font-size: 14px;
@@ -212,7 +216,7 @@ textarea:not(:placeholder-shown)+label {
 button {
   padding: 14px;
   font-size: 16px;
-  background: #31A599;
+  background: #31a599;
   border: none;
   border-radius: 8px;
   color: white;

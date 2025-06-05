@@ -139,7 +139,7 @@ body {
 .content-section {
   min-height: 100vh;
   padding: 60px 0;
-   background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .container {
@@ -207,7 +207,7 @@ body {
   right: 25px;
   top: 50%;
   transform: translateY(-50%);
-  color: #667eea;
+  color: #30a49a;
   font-size: 1.2rem;
 }
 
@@ -248,7 +248,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: #667eea;
+  background: #30a49a;
   color: white;
   border-color: #667eea;
   transform: translateY(-2px);

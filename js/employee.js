@@ -97,8 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="staff-department">${formatDepartment(staff.department)}</p>
           <p class="staff-bio">${staff.bio}</p>
           <div class="staff-contact">
-            <div class="contact-item">📧 ${staff.email}</div>
-            <div class="contact-item">📞 ${staff.phone}</div>
+            <div class="contact-item"><i class="fa-solid fa-envelope"></i> ${
+              staff.email
+            }</div>
+            <div class="contact-item"><i class="fa-solid fa-phone"></i> ${
+              staff.phone
+            }</div>
           </div>
         `;
         staffGrid.appendChild(card);

@@ -254,13 +254,15 @@ body {
   background-color: #df325a;
 }
 
+/*modal section*/
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,62 +270,66 @@ body {
 }
 
 .modal-content {
-  background: #fff;
-  color: #000;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 700px;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  max-width: 600px;
   width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   position: relative;
-  line-height: 1.6;
 }
 
 .modal-content h2 {
+  text-align: center;
+  color: #df3a56;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #111;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.modal-content p {
-  margin: 0.5rem 0;
+.modal-content .details-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
   font-size: 1rem;
+  color: #333;
 }
 
-.modal-content strong {
+.modal-content .details-grid strong {
   font-weight: 600;
-  color: #222;
+  color: #000;
+}
+
+#buynow {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.7rem 1.8rem;
+  background-color: #df3a56;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#buynow:hover {
+  background-color: #c62844;
 }
 
 .close-button {
   position: absolute;
-  top: 12px;
-  right: 18px;
+  top: 15px;
+  right: 20px;
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
   cursor: pointer;
   background: transparent;
   border: none;
-  color: #333;
-  font-weight: bold;
-}
-
-#buynow {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: #000;
-  border: 1px solid #333;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#buynow:hover {
-  background-color: #000;
-  color: #fff;
-  border-color: #000;
 }
 
 .hidden {

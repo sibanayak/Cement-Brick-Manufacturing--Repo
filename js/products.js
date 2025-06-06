@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalDescription = document.getElementById("modalDescription");
   const modalPrice = document.getElementById("modalPrice");
 
+  /*modal section*/
   document.querySelectorAll(".btn").forEach((button, index) => {
     button.addEventListener("click", (e) => {
       e.preventDefault();

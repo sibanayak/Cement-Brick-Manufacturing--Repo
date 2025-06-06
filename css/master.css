@@ -107,6 +107,10 @@ body {
   transform: translateY(-2px);
 }
 
+.nav-active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;

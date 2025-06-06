@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       position: "Chief Technology Officer",
       department: "leadership",
       bio: "Technology strategist leading digital transformation initiatives and innovation.",
-      email: "priya.sharma@yukteshenterprises.com",
+      email: "priya@yukteshenterprises.com",
       phone: "+91 98765 43211",
     },
     {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       position: "Senior Engineer",
       department: "engineering",
       bio: "Experienced engineer specializing in project management and technical solutions.",
-      email: "amit.kumar@yukteshenterprises.com",
+      email: "amit@yukteshenterprises.com",
       phone: "+91 98765 43212",
     },
     {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       position: "Marketing Manager",
       department: "sales",
       bio: "Creative marketing professional driving brand awareness and customer engagement.",
-      email: "sneha.gupta@yukteshenterprises.com",
+      email: "sneha@yukteshenterprises.com",
       phone: "+91 98765 43213",
     },
     {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       position: "Operations Head",
       department: "operations",
       bio: "Operations expert ensuring smooth workflow and efficient project delivery.",
-      email: "ravi.verma@yukteshenterprises.com",
+      email: "ravi@yukteshenterprises.com",
       phone: "+91 98765 43214",
     },
     {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       position: "HR Director",
       department: "hr",
       bio: "HR professional focused on talent acquisition and employee development.",
-      email: "meera.patel@yukteshenterprises.com",
+      email: "meera@yukteshenterprises.com",
       phone: "+91 98765 43215",
     },
   ];

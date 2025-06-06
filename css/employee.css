@@ -114,6 +114,10 @@ body {
   transform: translateY(-2px);
 }
 
+.nav-active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -272,6 +276,7 @@ body {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  word-break: break-word;
 }
 
 .staff-card::before {
@@ -355,10 +360,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   color: #4a5568;
   font-size: 0.9rem;
+  line-height: 1.5;
+  word-spacing: break-word;
+  flex-wrap: wrap;
   transition: color 0.3s ease;
+}
+
+.contact-item i {
+  font-size: 1rem;
+  vertical-align: middle;
+  line-height: 1;
+  position: relative;
+  top: 1px;
 }
 
 .contact-item:hover {
@@ -817,5 +833,37 @@ body {
   }
   .video-section {
     height: 60vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .staff-contact {
+    gap: 8px;
+  }
+
+  .contact-item {
+    font-size: 0.85rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .contact-item i {
+    font-size: 0.95rem;
+    margin-right: 6px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-item {
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+
+  .contact-item i {
+    font-size: 0.85rem;
   }
 }

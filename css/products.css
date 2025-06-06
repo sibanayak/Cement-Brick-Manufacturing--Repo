@@ -223,8 +223,8 @@ body {
 .product-info {
   padding: 1.5rem;
   display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .product-info h3 {
@@ -236,6 +236,7 @@ body {
 .product-info p {
   color: #7f8c8d;
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .product-price {

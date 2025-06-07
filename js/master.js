@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (quantity.value === "" || isNaN(quantityValue)) {
       showError(quantity, "quantityError", "Please enter quantity");
       return false;
-    } else if (quantityValue < 1) {
+    } else if (quantityValue < 150) {
       showError(quantity, "quantityError", "Quantity must be at least 1");
       return false;
     } else if (quantityValue > 10000) {

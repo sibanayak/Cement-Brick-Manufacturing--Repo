@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(quantity, "quantityError", "Please enter quantity");
       return false;
     } else if (quantityValue < 150) {
-      showError(quantity, "quantityError", "Quantity must be at least 1");
+      showError(quantity, "quantityError", "Quantity must be at least 150");
       return false;
     } else if (quantityValue > 10000) {
       showError(

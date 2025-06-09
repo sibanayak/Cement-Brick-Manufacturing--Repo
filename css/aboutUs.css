@@ -182,9 +182,14 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
+<<<<<<< HEAD
   margin: 20px 0;
+=======
+  margin: 40px 0;
+  padding: 0 30px;
+>>>>>>> 7a5318e333d460032104fafd8bab8f73aabac532
   background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
+ 
   border-radius: 15px;
   backdrop-filter: blur(10px);
 }
@@ -829,6 +834,9 @@ h1 {
   .product-image {
     font-size: 0.95rem;
   }
+  .features-list{
+    padding: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -848,7 +856,7 @@ h1 {
     padding-right: 1rem;
   }
   .stat-card {
-    padding: 20px;
+    padding: 5px;
   }
   .stat-number {
     font-size: 2rem;

@@ -6,17 +6,21 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 100px;
+  
+  
 }
 
 .video-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -2;
   overflow: hidden;
 }
@@ -25,9 +29,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  z-index: -2;
 }
 
 .video-overlay {
@@ -36,7 +41,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+   background: rgba(255, 255, 255, 0.95);
   z-index: -1;
 }
 
@@ -132,6 +137,7 @@ body {
   margin: 120px auto 50px;
   padding: 20px;
   text-align: center;
+ 
 }
 
 .contact-box {
@@ -142,9 +148,22 @@ body {
 }
 
 .contact-box h1 {
-  font-size: 28px;
+  font-size: 48px;
   margin-bottom: 10px;
+  position: relative;
 }
+
+.contact-box h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e74c3c;
+}
+
 
 .contact-box p {
   color: #555;

@@ -211,6 +211,17 @@ textarea:not(:placeholder-shown) + label {
   resize: none;
 }
 
+button {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #1AA0A5;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
 
 button:hover {
   transform: scale(1.03);

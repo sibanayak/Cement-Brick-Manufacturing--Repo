@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Management - Yuktesh Cement Brick Manufacturing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/orderManagement.css" />
+    <script
+      src="https://kit.fontawesome.com/ebf68a0b4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Video Section -->
+    <div class="video-container">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="../assets/background.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <div class="brand-logo">
+          <a href="master.html">
+            <img
+              src="../assets/Logo.png"
+              alt="Yuktesh Enterprises Logo"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle" aria-label="Toggle menu">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+        <ul class="navigation" id="mobileMenu">
+          <li><a href="master.html" class="nav-link">Home</a></li>
+          <li><a href="aboutUs.html" class="nav-link">About Us</a></li>
+          <li><a href="../html/products.html" class="nav-link">Products</a></li>
+          <li><a href="media.html" class="nav-link">Media</a></li>
+          <li>
+            <a href="manufactruingProcess.html" class="nav-link"
+              >Manufacturing Process</a
+            >
+          </li>
+          <li>
+            <a href="orderManagement.html" class="nav-link nav-active"
+              >Order Management</a
+            >
+          </li>
+          <li><a href="employee.html" class="nav-link">Our Team</a></li>
+          <li><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="page-header">
+          <h1>Order Management System</h1>
+          <p>
+            Streamline your cement brick orders with our advanced management
+            platform.
+          </p>
+        </div>
+
+        <div class="order-sections">
+          <div class="order-section">
+            <h2 class="section-title">
+              <i class="fas fa-plus-circle"></i>
+              Place New Order
+            </h2>
+            <form class="order-form" id="orderForm">
+              <div class="form-group">
+                <label for="customerName">Customer Name *</label>
+                <input
+                  type="text"
+                  id="customerName"
+                  name="customerName"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Delivery Address *</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="brickType">Brick Type *</label>
+                  <select id="brickType" name="brickType" required>
+                    <option value="">Select Brick Type</option>
+                    <option value="solid">Solid Cement Brick</option>
+                    <option value="hollow">Hollow Cement Brick</option>
+                    <option value="interlocking">Interlocking Brick</option>
+                    <option value="paver">Paver Block</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="quantity">Quantity (pieces) *</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="deliveryDate">Preferred Delivery Date</label>
+                  <input type="date" id="deliveryDate" name="deliveryDate" />
+                </div>
+                <div class="form-group">
+                  <label for="priority">Priority Level</label>
+                  <select id="priority" name="priority">
+                    <option value="normal">Normal</option>
+                    <option value="high">High</option>
+                    <option value="urgent">Urgent</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="specialRequests">Special Requirements</label>
+                <textarea
+                  id="specialRequests"
+                  name="specialRequests"
+                  rows="3"
+                  placeholder="Any specific requirements or notes..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">
+                <i class="fas fa-shopping-cart"></i> Place Order
+              </button>
+            </form>
+          </div>
+
+          <div class="order-section">
+            <h2 class="section-title">
+              <i class="fas fa-search"></i>
+              Track Your Order
+            </h2>
+            <form class="order-form" id="trackingForm">
+              <div class="form-group">
+                <label for="orderId">Order ID</label>
+                <input
+                  type="text"
+                  id="orderId"
+                  name="orderId"
+                  placeholder="Enter your order ID"
+                />
+              </div>
+              <div class="form-group">
+                <label for="trackingEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="trackingEmail"
+                  name="trackingEmail"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                <i class="fas fa-truck"></i> Track Order
+              </button>
+            </form>
+
+            <div class="order-status">
+              <h3>Recent Orders</h3>
+              <div class="status-cards">
+                <div class="status-card">
+                  <h4>Order #YE-2024-001</h4>
+                  <p><strong>Product:</strong> Solid Cement Brick</p>
+                  <p><strong>Quantity:</strong> 1,000 pieces</p>
+                  <p><strong>Date:</strong> June 05, 2025</p>
+                  <span class="status-badge status-processing">Processing</span>
+                </div>
+                <div class="status-card">
+                  <h4>Order #YE-2024-002</h4>
+                  <p><strong>Product:</strong> Hollow Cement Brick</p>
+                  <p><strong>Quantity:</strong> 2,500 pieces</p>
+                  <p><strong>Date:</strong> June 03, 2025</p>
+                  <span class="status-badge status-pending">Pending</span>
+                </div>
+                <div class="status-card">
+                  <h4>Order #YE-2024-003</h4>
+                  <p><strong>Product:</strong> Paver Block</p>
+                  <p><strong>Quantity:</strong> 500 pieces</p>
+                  <p><strong>Date:</strong> May 28, 2025</p>
+                  <span class="status-badge status-completed">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>24/7 Order Tracking</h3>
+            <p>
+              Monitor your orders in real-time with our advanced tracking
+              system. Get instant updates on production and delivery status.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Efficient logistics network ensuring timely delivery of your
+              cement bricks to any location across the region.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Quality Assurance</h3>
+            <p>
+              Every order undergoes rigorous quality checks to ensure you
+              receive premium quality cement bricks that meet industry
+              standards.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Customer Support</h3>
+            <p>
+              Dedicated support team available to assist you with your orders,
+              modifications, and any queries you may have.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="master.html">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="../html/products.html">Products</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li>
+                <a href="manufactruingProcess.html">Manufacturing Process</a>
+              </li>
+              <li><a href="orderManagement.html">Order Management</a></li>
+              <li><a href="employee.html">Our Team</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <p>
+              Join our community and stay updated with the latest trends and
+              innovations.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook">f</a>
+              <a href="#" class="social-icon twitter">X</a>
+              <a href="#" class="social-icon instagram">i</a>
+              <a href="#" class="social-icon linkedin">ln</a>
+              <a href="#" class="social-icon youtube">Y</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>123 Business Avenue, Mumbai</p>
+            <p>Maharashtra, India 400001</p>
+            <p>Phone: +91 22 1234 5678</p>
+            <p>Email: info@yukteshenterprises.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#cookies">Cookie Policy</a>
+          </div>
+          <p>&copy; 2023 Yuktesh Enterprises. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/orderManagement.js"></script>
+  </body>
+</html>

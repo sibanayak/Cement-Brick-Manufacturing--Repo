@@ -152,16 +152,25 @@ body {
 }
 
 h1 {
-  color: #016aad;
   font-size: 3rem;
-  margin-bottom: 20px;
-  background: #000000;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.hero-section h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e74c3c;
 }
 
 .hero-subtitle {
+  padding-top: 1rem;
   font-size: 1.3rem;
   color: #7f8c8d;
   margin-bottom: 30px;
@@ -539,9 +548,8 @@ h1 {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -784,16 +792,6 @@ h1 {
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media (max-width: 1024px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);

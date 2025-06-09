@@ -137,9 +137,9 @@ body {
 .container {
   position: relative;
   z-index: 1;
-  background: #ffffff; /* Solid white */
+  background: #ffffff;
   width: 100%;
-  padding: 120px 0 40px 0; /* Top padding = header height */
+  padding: 120px 0 40px 0;
   min-height: 100vh;
 }
 
@@ -173,8 +173,8 @@ h1::after {
 .page-header p {
   padding-top: 1rem;
   font-size: 1.1rem;
-  opacity: 0.9;
   color: #7f8c8d;
+  margin-bottom: 30px;
 }
 
 .order-sections {
@@ -515,8 +515,6 @@ h1::after {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-
-
 /* Responsive */
 /* for navbar */
 @media (max-width: 600px) {
@@ -572,7 +570,6 @@ h1::after {
   }
 }
 
-
 @media (min-width: 1440px) {
   .container {
     max-width: 1600px;
@@ -596,7 +593,6 @@ h1::after {
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-
   .order-sections {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -680,8 +676,6 @@ h1::after {
 }
 
 @media (max-width: 374px) {
-  
-
   .page-header {
     padding: 1rem;
   }

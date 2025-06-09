@@ -173,7 +173,7 @@ h1 {
 
 .hero-subtitle {
   padding-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #7f8c8d;
   margin-bottom: 30px;
 }
@@ -182,14 +182,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-<<<<<<< HEAD
-  margin: 20px 0;
-=======
   margin: 40px 0;
   padding: 0 30px;
->>>>>>> 7a5318e333d460032104fafd8bab8f73aabac532
   background: rgba(255, 255, 255, 0.9);
- 
   border-radius: 15px;
   backdrop-filter: blur(10px);
 }
@@ -834,7 +829,7 @@ h1 {
   .product-image {
     font-size: 0.95rem;
   }
-  .features-list{
+  .features-list {
     padding: 10px;
   }
 }

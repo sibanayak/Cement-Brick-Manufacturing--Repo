@@ -171,9 +171,11 @@ body {
   display: inline-block;
   padding-bottom: 10px;
 }
-.section-title p{
-   color: #555;
-   margin-bottom: 30px
+.section-title p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 .section-title h1::after {

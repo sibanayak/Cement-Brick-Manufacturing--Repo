@@ -174,10 +174,8 @@ body {
 
 .page-header p {
   padding-top: 1rem;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
   color: #7f8c8d;
 }
 

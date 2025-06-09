@@ -165,14 +165,14 @@ body {
   color: Black;
 }
 
-.section-title h2 {
+.section-title h1 {
   font-size: 3rem;
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
 }
 
-.section-title h2::after {
+.section-title h1::after {
   content: "";
   position: absolute;
   bottom: 0;

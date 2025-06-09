@@ -107,9 +107,11 @@ body {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
+
 .nav-active {
   background: rgba(255, 255, 255, 0.2);
 }
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -180,7 +182,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  margin: 40px 0;
+  margin: 20px 0;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 15px;
@@ -840,6 +842,11 @@ h1 {
     font-size: 0.85rem;
     height: 160px;
   }
+  .experience-stats {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .stat-card {
     padding: 20px;
   }
@@ -851,6 +858,9 @@ h1 {
   }
   .about-content {
     padding: 30px 20px;
+  }
+  .features-list {
+    padding-right: 2rem;
   }
   .about-text {
     font-size: 0.9rem;

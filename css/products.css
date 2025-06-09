@@ -171,6 +171,10 @@ body {
   display: inline-block;
   padding-bottom: 10px;
 }
+.section-title p{
+   color: #555;
+   margin-bottom: 30px
+}
 
 .section-title h1::after {
   content: "";

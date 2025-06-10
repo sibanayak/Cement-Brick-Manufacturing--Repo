@@ -116,7 +116,7 @@ function validatePhone() {
     const phoneValue = phone.value.trim();
     const phoneDigitsOnly = phoneValue.replace(/\D/g, ""); // removes non-digits
 
-    const phoneRegex = /^[0-9\s\-()+]+$/; // accepts digits, spaces, dashes, parens
+    const phoneRegex = /^[6-9]\d{9}$/; // accepts digits, spaces, dashes, parens
 
     if (phoneValue === "") {
         showError(phone, "phoneError", "Please enter your phone number");

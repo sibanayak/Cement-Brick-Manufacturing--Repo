@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Date Validation
+  const today = new Date().toISOString().split("T")[0];
+  const deliveryDateInput = document.getElementById("deliveryDate");
+  if (deliveryDateInput) {
+    deliveryDateInput.setAttribute("min", today);
+  }
+
   // Order form functionality
   const orderForm = document.getElementById("orderForm");
   const trackingForm = document.getElementById("trackingForm");
@@ -27,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const address = document.getElementById("address").value.trim();
     const brickType = document.getElementById("brickType").value;
     const quantity = document.getElementById("quantity").value;
+    const deliveryDate = document.getElementById("deliveryDate").value;
 
     // Name validation
     if (customerName.length < 3 || customerName.startsWith(" ")) {
@@ -36,17 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Email validation (basic regex)
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Email validation
+    const emailPattern = /^[^\s@]+@gmail\.com$/;
     if (!emailPattern.test(email)) {
-      alert("Please enter a valid email address.");
+      alert("Please enter a valid Gmail address.");
       return;
     }
 
     // Phone validation
     const phonePattern = /^[6-9]\d{9}$/;
     if (!phonePattern.test(phone)) {
-      alert("Phone number must be exactly 10 digits.");
+      alert("Please enter a valid Phone number.");
       return;
     }
 
@@ -68,6 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Delivery Date validation
+    if (!deliveryDate) {
+      alert("Please select a preferred delivery date.");
+      return;
+    }
+
+    const todayDate = new Date().toISOString().split("T")[0];
+    if (deliveryDate < todayDate) {
+      alert("Please select a future date for delivery.");
+      return;
+    }
+
     // Generate order ID
     const orderId =
       "YE-" +
@@ -77,10 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show success message
     alert(
-      `Order placed successfully!\nOrder ID: ${orderId}\nYou will receive a confirmation email shortly.`
+      `Order placed successfully!\nOrder ID: ${orderId}\nDelivery Date: ${deliveryDate}\nYou will receive a confirmation email shortly.`
     );
 
     // Reset form
     orderForm.reset();
+
+    // Reset the min date after form reset
+    if (deliveryDateInput) {
+      deliveryDateInput.setAttribute("min", today);
+    }
   });
 });

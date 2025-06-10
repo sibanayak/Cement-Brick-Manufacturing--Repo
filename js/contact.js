@@ -96,7 +96,7 @@ const name =lastName.value.trim();
 // for email
 function validateEmail() {
     const emailValue = email.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@gmail\.com$/;
 
     if (emailValue === "") {
         showError(email, "emailError", "Please enter your email address");

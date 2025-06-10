@@ -556,9 +556,8 @@ h1::after {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Media Queries - Mobile First Approach */
+/* Mobile Responsive */
 
-/* Small Mobile Devices (320px and up) */
 @media (max-width: 374px) {
   .container {
     padding: 100px 0.5rem 20px 0.5rem;
@@ -601,7 +600,6 @@ h1::after {
   }
 }
 
-/* Mobile Devices (375px to 767px) */
 @media (min-width: 375px) and (max-width: 767px) {
   .container {
     padding: 110px 1rem 30px 1rem;
@@ -640,7 +638,6 @@ h1::after {
   }
 }
 
-/* Tablet Devices (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 120px 2rem 40px 2rem;
@@ -671,10 +668,9 @@ h1::after {
   }
 }
 
-/* Desktop Devices (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 120px 2rem 40px 2rem;
   }
@@ -718,7 +714,6 @@ h1::after {
   }
 }
 
-/* Mobile Navigation */
 @media (max-width: 1023px) {
   .menu-toggle {
     display: flex;
@@ -757,15 +752,5 @@ h1::after {
     width: 80%;
     text-align: center;
     border-radius: 10px;
-  }
-}
-
-/* High DPI Displays */
-@media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .logo-img {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
   }
 }

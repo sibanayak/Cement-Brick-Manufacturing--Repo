@@ -518,6 +518,21 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .navigation {
+    gap: 0.3rem;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+}
+
 @media (max-width: 900px) {
   .menu-toggle {
     display: flex;

@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Phone validation
     const phonePattern = /^[6-9]\d{9}$/;
     if (!phonePattern.test(phone)) {
-      alert(
-        "Phone number must be exactly 10 digits and start with 6, 7, 8, or 9."
-      );
+      alert("Phone number must be exactly 10 digits.");
       return;
     }
 
@@ -85,33 +83,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Reset form
     orderForm.reset();
   });
-
-  // Track Order validation
-  trackingForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const orderId = document.getElementById("orderId").value.trim();
-    const email = document.getElementById("trackingEmail").value.trim();
-
-    // Track Order validations
-    if (orderId.length === 0) {
-      alert("Please enter your Order ID.");
-      return;
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-
-    // Show tracking message
-    alert(
-      `Tracking information for Order ID: ${orderId}\nStatus: Processing\nEstimated delivery: 7-10 business days\nDetailed tracking info has been sent to ${email}`
-    );
-  });
-
-  // Set minimum date to today for delivery date
-  const today = new Date().toISOString().split("T")[0];
-  document.getElementById("deliveryDate").setAttribute("min", today);
 });

@@ -271,53 +271,47 @@ h1::after {
   box-shadow: 0 5px 15px rgba(52, 73, 94, 0.4);
 }
 
-.order-status {
-  margin-top: 2rem;
-}
-
-.status-cards {
+.contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
-.status-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
   border-left: 4px solid #e74c3c;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.status-card h4 {
+.contact-icon {
+  font-size: 1.5rem;
   color: #e74c3c;
+  width: 40px;
+  text-align: center;
+}
+
+.contact-details h4 {
+  color: #333;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
-.status-badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
+.contact-details p {
+  color: #666;
+  margin: 0;
 }
 
-.status-pending {
-  background: #fff3cd;
-  color: #856404;
+.contact-details a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.status-processing {
-  background: #d1ecf1;
-  color: #0c5460;
-}
-
-.status-completed {
-  background: #d4edda;
-  color: #155724;
+.contact-details a:hover {
+  color: #c0392b;
 }
 
 .features-grid {
@@ -516,12 +510,12 @@ h1::after {
 }
 
 /* Responsive */
-/* for navbar */
 @media (max-width: 600px) {
   .form-row {
     flex-direction: column;
   }
 }
+
 @media (max-width: 900px) {
   .menu-toggle {
     display: flex;
@@ -606,10 +600,6 @@ h1::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .status-cards {
-    grid-template-columns: 1fr;
-  }
-
   .order-section {
     padding: 1.5rem;
   }
@@ -631,10 +621,6 @@ h1::after {
   }
 
   .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .status-cards {
     grid-template-columns: 1fr;
   }
 
@@ -697,10 +683,6 @@ h1::after {
     width: 100%;
     font-size: 0.9rem;
     padding: 0.8rem 1.5rem;
-  }
-
-  .status-cards {
-    grid-template-columns: 1fr;
   }
 
   .features-grid {

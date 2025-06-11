@@ -591,7 +591,6 @@ body {
     font-size: 1.2rem;
     padding: 1rem 2rem;
     width: 100%;
-    display: flex;
     text-align: center;
   }
 }
@@ -649,7 +648,7 @@ body {
   }
 
   .footer-links {
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -738,15 +737,6 @@ body {
   }
   .nav-container {
     padding: 0 10px;
-  }
-
-  .contact-item {
-    font-size: 0.8rem;
-    gap: 6px;
-  }
-
-  .contact-item i {
-    font-size: 0.85rem;
   }
 
   .logo-img {
@@ -849,10 +839,12 @@ body {
   .footer-links {
     gap: 10px;
     margin-bottom: 15px;
-    /* font-size: 0.8rem; */
+    font-size: 0.8rem;
   }
 
-  git 
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
   .navigation {
     padding-top: 80px;
   }
@@ -884,5 +876,16 @@ body {
     font-size: 0.95rem;
     margin-right: 6px;
     top: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-item {
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+
+  .contact-item i {
+    font-size: 0.85rem;
   }
 }

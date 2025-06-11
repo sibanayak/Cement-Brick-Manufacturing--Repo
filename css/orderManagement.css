@@ -559,6 +559,11 @@ h1::after {
 /* Mobile Responsive */
 
 @media (max-width: 374px) {
+  .social-icons{
+   
+    gap: 7px;
+    justify-content: center;
+  }
   .container {
     padding: 100px 0.5rem 20px 0.5rem;
   }

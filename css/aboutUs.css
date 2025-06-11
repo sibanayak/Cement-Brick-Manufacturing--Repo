@@ -918,7 +918,7 @@ h1 {
     font-size: 0.8rem;
   }
   .footer-links {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
   }
 }

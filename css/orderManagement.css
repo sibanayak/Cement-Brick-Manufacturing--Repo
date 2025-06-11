@@ -705,6 +705,7 @@ h1::after {
   }
 }
 
+/* Large Desktop (1440px and up) */
 @media (min-width: 1440px) {
   .container {
     max-width: 1600px;

@@ -628,6 +628,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav-link {
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
   .staff-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -649,7 +653,6 @@ body {
   }
 
   .footer-links {
-    /* flex-direction: column; */
     gap: 15px;
   }
 
@@ -687,6 +690,11 @@ body {
   .staff-grid {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .nav-link {
+    padding: 16px 32px;
+    font-size: 1rem;
   }
 
   .footer {
@@ -731,6 +739,10 @@ body {
 @media (max-width: 320px) {
   body {
     padding-top: 60px;
+  }
+  .nav-link {
+    padding: 16px 32px;
+    font-size: 1rem;
   }
 
   .container {
@@ -852,8 +864,7 @@ body {
     /* font-size: 0.8rem; */
   }
 
-  git 
-  .navigation {
+  git .navigation {
     padding-top: 80px;
   }
 

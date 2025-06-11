@@ -648,7 +648,7 @@ body {
   }
 
   .footer-links {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 15px;
   }
 
@@ -839,11 +839,11 @@ body {
   .footer-links {
     gap: 10px;
     margin-bottom: 15px;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
 
   .footer-bottom p {
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
   }
   .navigation {
     padding-top: 80px;

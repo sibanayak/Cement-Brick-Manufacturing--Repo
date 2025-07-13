@@ -248,11 +248,19 @@ body {
   margin-bottom: 4rem;
 }
 
-.video-item iframe {
-  width: 100%;
+.video-item video {
+  display: block; 
+  width: 100%; 
   height: 200px;
   border-radius: 10px;
   border: none;
+  object-fit: cover; 
+}
+
+.video-item {
+  display: grid;
+  grid-template-columns: 2fr; 
+  gap: 10px; 
 }
 
 .video-item p {
@@ -524,5 +532,10 @@ body {
 
   .nav-container {
     padding: 0 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .video-item video {
+    max-height: 180px; 
   }
 }

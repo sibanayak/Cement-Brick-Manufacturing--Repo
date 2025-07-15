@@ -243,24 +243,25 @@ body {
 /* YouTube Videos */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
-}
-
-.video-item video {
-  display: block; 
-  width: 100%; 
-  height: 200px;
-  border-radius: 10px;
-  border: none;
-  object-fit: cover; 
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .video-item {
-  display: grid;
-  grid-template-columns: 2fr; 
-  gap: 10px; 
+  display: block;
+  width: 100%;
+}
+
+.video-item video {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  object-fit: cover;
 }
 
 .video-item p {
